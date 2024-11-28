@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Element By Name</title>
+</head>
+<body>
+    <script>
+        function count(){
+var total=document.getElementsByName("gender");
+alert("Total Count for radio buttons is "+total.length);
+       }
+    </script>
+    <form>
+        Male:<input type="radio" name="gender"value="male"/>
+        Female:<input type="radio" name="gender"value="female"/><br>
+        <input type="submit" onclick="count()">
+    </form>
+</body>
+</html>

@@ -1,0 +1,21 @@
+body{
+    background-color: coral;
+}
+h3{
+    text-align: center;
+    background-color: aqua;;
+    width:1000px;
+    height: 50px;
+    text-decoration: underline;
+    text-transform: capitalize;
+    color: red;
+    border-radius: 9px;
+}
+/* I am Comment*/
+/* Types of selectors 
+there five types of selectors
+1.element selector
+2.group selector
+3.class selector
+4.id selector
+5.pseudo-class selector or  universal selector

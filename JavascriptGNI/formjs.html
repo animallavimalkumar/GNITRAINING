@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>My Form Validation</title>
+        <style>
+            form{
+                background-color: aqua;
+                width:500px;
+                height:200px;
+                margin: auto;
+                padding: 30px;
+                border-radius: 20px;
+            }
+button{
+    background-color: darkorchid;
+    border-radius: 5px;
+    color: coral;
+    width:100px;
+    height: 30px;
+    cursor:pointer;
+}
+#submitbtn{
+    margin:10px 20px 5px 150px;
+}
+
+</style>
+  
+    </head>
+    <body>
+        
+            <form name="myForm" method="post" onsubmit="validate()">
+
+       UserName:<input type="text" name="username" class="u"/><br><br/>
+        <br/>
+        Password:<input type="password" name="password"class="u"/><br/><br/>
+                <br/>
+                <button value="submit" id="submitbtn">Submit</button>
+        </form>
+        <script>
+            function validate(){
+                var user=document.myForm.username.value;
+                var pass=document.myForm.password.value;
+                if(user==""&&pass==""){
+                    document.write("Please Enter your Username and Password");
+                }
+                else if(pass<8){
+                    document.write("please enter above 8 characters");
+                }
+                else{
+                    document.write("Username is ="+user+"  "+"Password is="+pass);
+                }
+            }
+        </script>
+    </body>
+</html>

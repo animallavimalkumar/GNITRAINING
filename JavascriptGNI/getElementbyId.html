@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Squaring A Number</title>
+</head>
+<body>
+    <script>
+        function square(){
+            var number=document.getElementById("number").value;
+            document.write("Result of the square: "+number*number);
+        }
+        function cube(){
+            var number=document.getElementById("number").value;
+            document.write("Result of the cube:"+number*number*number)
+        }
+    </script>
+    <form>
+        Enter a number:<input type="text" id="number"/>
+        <input type="button" value="square" onclick="square()"/>
+        <input type="button" value="Cube" onclick="cube()"/>
+    </form>
+</body>
+</html>
